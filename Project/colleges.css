@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.TYPE-COLLEGE{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 2rem;
+}
+#chitkara-university {
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+}
+#pec{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+
+}
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: white;
+    color: #000;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.theback h1 {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.theback p {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.thefront img {
+    width: 250px;
+    height: 320px;
+}
+.theback::before{
+    content: "";
+    background-color: antiquewhite;
+    z-index: -1;
+    opacity: 0.4;
+}
